@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esthetics Studio — Services & Booking</title>
+  <meta name="description" content="Esthetic services, pricing, and online booking." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Sticky Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__mark"></span>
+        <span class="brand__text">Esthetics Studio</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#policies">Policies</a>
+        <a href="#book" class="btn btn--primary">Book Now</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#policies">Policies</a>
+      <a href="#book">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Skincare • Facials • Brows</p>
+          <h1>Healthy skin, simplified.</h1>
+          <p class="lead">
+            A calm, professional studio experience with results-driven treatments.
+            Browse services and book online in minutes.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="#book">Book an Appointment</button>
+            <button class="btn btn--ghost" data-scroll="#services">View Services</button>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <div class="trust__label">Licensed</div>
+              <div class="trust__value">Esthetician</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__label">Location</div>
+              <div class="trust__value">Your City</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__label">Booking</div>
+              <div class="trust__value">Online 24/7</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <div class="heroCard">
+            <div class="heroCard__img"></div>
+            <div class="heroCard__meta">
+              <div class="pill">Most Popular</div>
+              <div class="heroCard__title">Signature Facial</div>
+              <div class="heroCard__sub">60 min • $95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services & Pricing</h2>
+          <p class="muted">Transparent pricing. Simple booking. Add-ons available at checkout.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Service categories">
+          <button class="tab is-active" data-filter="all" role="tab">All</button>
+          <button class="tab" data-filter="facials" role="tab">Facials</button>
+          <button class="tab" data-filter="brows" role="tab">Brows</button>
+          <button class="tab" data-filter="waxing" role="tab">Waxing</button>
+          <button class="tab" data-filter="addons" role="tab">Add-ons</button>
+        </div>
+
+        <div class="grid" id="servicesGrid">
+          <!-- Service cards injected by JS -->
+        </div>
+
+        <div class="ctaRow">
+          <div class="ctaRow__copy">
+            <h3>Not sure what to book?</h3>
+            <p class="muted">Start with a consult and we’ll build the right plan for your skin.</p>
+          </div>
+          <button class="btn btn--primary" data-scroll="#book">Book a Consult</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__img" aria-hidden="true"></div>
+        <div class="about__copy">
+          <h2>About</h2>
+          <p class="muted">
+            Hi! I’m <strong>[Name]</strong>, a licensed esthetician focused on healthy, long-term skin.
+            My approach blends relaxation with results—customized to your goals.
+          </p>
+
+          <ul class="checklist">
+            <li>Customized treatment plans</li>
+            <li>Professional-grade products</li>
+            <li>Clear aftercare guidance</li>
+          </ul>
+
+          <button class="btn btn--ghost" data-scroll="#services">Explore Services</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reviews</h2>
+          <p class="muted">A few kind words from clients.</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review">
+            <p>“So relaxing and my skin looked amazing right away.”</p>
+            <div class="review__by">— Client Name</div>
+          </article>
+          <article class="review">
+            <p>“Best facial I’ve ever had. Super knowledgeable and professional.”</p>
+            <div class="review__by">— Client Name</div>
+          </article>
+          <article class="review">
+            <p>“Great results and clear aftercare steps. Booking was easy.”</p>
+            <div class="review__by">— Client Name</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section class="section section--alt" id="policies">
+      <div class="container">
+        <div class="section__head">
+          <h2>Policies</h2>
+          <p class="muted">Clear expectations help keep things running smoothly.</p>
+        </div>
+
+        <div class="policyGrid">
+          <div class="policyCard">
+            <h3>Cancellation</h3>
+            <p class="muted">Please cancel/reschedule at least 24 hours in advance.</p>
+          </div>
+          <div class="policyCard">
+            <h3>Late Arrivals</h3>
+            <p class="muted">Arriving late may shorten your appointment to respect other clients.</p>
+          </div>
+          <div class="policyCard">
+            <h3>No-Shows</h3>
+            <p class="muted">No-shows may require prepayment to book future appointments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking (EMPTY IFRAME) -->
+    <section class="section" id="book">
+      <div class="container">
+        <div class="section__head">
+          <h2>Book an Appointment</h2>
+          <p class="muted">
+            Choose a service, date, and time. You’ll receive a confirmation after booking.
+          </p>
+        </div>
+
+        <div class="bookingShell">
+          <div class="bookingShell__note">
+            <strong>Embed goes here:</strong>
+            when you’re ready, set the iframe <code>src</code> to her Acuity scheduling URL.
+          </div>
+
+          <iframe
+            id="bookingFrame"
+            class="bookingFrame"
+            src=""
+            title="Online booking"
+            frameborder="0"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">Esthetics Studio</div>
+        <p class="muted">Your City, ST</p>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__label">Contact</div>
+        <a href="tel:+14355551234">(435) 555-1234</a>
+        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__label">Social</div>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Facebook</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small class="muted">© <span id="year"></span> Esthetics Studio. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
